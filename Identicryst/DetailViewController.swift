@@ -29,8 +29,8 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         // sets up scroll view
-        scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height+500)
-        
+//       scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height+500)
+
         // displays crystal title and crystal image
         title = name
         detailCrystalPhotoImageView.image = img

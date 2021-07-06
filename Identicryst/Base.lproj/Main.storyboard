@@ -99,51 +99,82 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1396"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FHW-z7-pPD">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1396"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FHW-z7-pPD">
+                                <rect key="frame" x="0.0" y="148" width="414" height="1248"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cno-HR-G2Y">
-                                        <rect key="frame" x="8" y="0.0" width="398" height="351"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cno-HR-G2Y">
+                                        <rect key="frame" x="0.0" y="10" width="414" height="365"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="cno-HR-G2Y" secondAttribute="height" multiplier="398:351" id="9wm-50-j6L"/>
+                                        </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Summary" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4s-SB-doJ">
-                                        <rect key="frame" x="8" y="359" width="398" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4s-SB-doJ">
+                                        <rect key="frame" x="8" y="379" width="398" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="rbI-Gc-7Gq"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebh-Ke-nm6" customClass="DTextView" customModule="Identicryst" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="396" width="398" height="183"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebh-Ke-nm6" customClass="DTextView" customModule="Identicryst" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="416" width="398" height="33"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Healing Properties" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVW-zr-N03">
-                                        <rect key="frame" x="8" y="587" width="398" height="28"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Healing Properties" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVW-zr-N03">
+                                        <rect key="frame" x="8" y="457" width="398" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="k8U-jK-ECa"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Arial-Black" family="Arial Black" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdk-al-Umn">
-                                        <rect key="frame" x="8" y="623" width="398" height="185"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdk-al-Umn">
+                                        <rect key="frame" x="8" y="493" width="398" height="150"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="rSi-ZQ-zdi"/>
+                                        </constraints>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="WVW-zr-N03" firstAttribute="leading" secondItem="ayi-Dd-MOx" secondAttribute="leading" constant="8" id="2Df-jo-LL9"/>
+                                    <constraint firstItem="f4s-SB-doJ" firstAttribute="leading" secondItem="ayi-Dd-MOx" secondAttribute="leading" constant="8" id="57B-zi-nOy"/>
+                                    <constraint firstItem="ayi-Dd-MOx" firstAttribute="trailing" secondItem="WVW-zr-N03" secondAttribute="trailing" constant="8" id="7GU-oS-FbK"/>
+                                    <constraint firstItem="cno-HR-G2Y" firstAttribute="centerX" secondItem="f4s-SB-doJ" secondAttribute="centerX" id="Fce-82-OHe"/>
+                                    <constraint firstAttribute="bottom" secondItem="cno-HR-G2Y" secondAttribute="bottom" constant="883" id="Hw8-9t-gYs"/>
+                                    <constraint firstItem="f4s-SB-doJ" firstAttribute="top" secondItem="cno-HR-G2Y" secondAttribute="bottom" constant="4" id="NdN-Lt-f67"/>
+                                    <constraint firstItem="ayi-Dd-MOx" firstAttribute="trailing" secondItem="Ebh-Ke-nm6" secondAttribute="trailing" constant="8" id="NhE-QB-Tv5"/>
+                                    <constraint firstItem="Ebh-Ke-nm6" firstAttribute="leading" secondItem="ayi-Dd-MOx" secondAttribute="leading" constant="8" id="Qnp-aT-gmJ"/>
+                                    <constraint firstItem="ayi-Dd-MOx" firstAttribute="trailing" secondItem="zdk-al-Umn" secondAttribute="trailing" constant="8" id="UqW-KJ-sHb"/>
+                                    <constraint firstItem="Ebh-Ke-nm6" firstAttribute="top" secondItem="f4s-SB-doJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Xf3-zv-hTY"/>
+                                    <constraint firstItem="zdk-al-Umn" firstAttribute="leading" secondItem="ayi-Dd-MOx" secondAttribute="leading" constant="8" id="Z1T-8e-FOh"/>
+                                    <constraint firstItem="WVW-zr-N03" firstAttribute="top" secondItem="Ebh-Ke-nm6" secondAttribute="bottom" constant="8" symbolic="YES" id="faB-j0-iHw"/>
+                                    <constraint firstItem="cno-HR-G2Y" firstAttribute="leading" secondItem="FHW-z7-pPD" secondAttribute="leading" id="lTW-Qa-D4E"/>
+                                    <constraint firstItem="zdk-al-Umn" firstAttribute="top" secondItem="WVW-zr-N03" secondAttribute="bottom" constant="8" symbolic="YES" id="oYN-TN-qdB"/>
+                                    <constraint firstItem="ayi-Dd-MOx" firstAttribute="trailing" secondItem="f4s-SB-doJ" secondAttribute="trailing" constant="8" id="rRV-rD-IpB"/>
+                                    <constraint firstAttribute="trailing" secondItem="cno-HR-G2Y" secondAttribute="trailing" id="vle-5b-8QN"/>
+                                    <constraint firstItem="cno-HR-G2Y" firstAttribute="top" secondItem="FHW-z7-pPD" secondAttribute="top" constant="10" id="wbC-k2-7Gc"/>
+                                </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="LuV-Ls-FNa"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="ayi-Dd-MOx"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bUb-iz-nsn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FHW-z7-pPD" firstAttribute="top" secondItem="bUb-iz-nsn" secondAttribute="top" id="8rL-Wu-lKU"/>
+                            <constraint firstAttribute="bottom" secondItem="FHW-z7-pPD" secondAttribute="bottom" id="JIt-dt-7FQ"/>
+                            <constraint firstItem="FHW-z7-pPD" firstAttribute="leading" secondItem="bUb-iz-nsn" secondAttribute="leading" id="SHA-WF-JWm"/>
+                            <constraint firstItem="FHW-z7-pPD" firstAttribute="trailing" secondItem="bUb-iz-nsn" secondAttribute="trailing" id="woz-mq-Hj9"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Cx4-jj-ZWG"/>
                     <size key="freeformSize" width="414" height="1396"/>
@@ -166,7 +197,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1E3-uE-4Qk" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="497-z0-0aa">
-                        <rect key="frame" x="0.0" y="44" width="414" height="104"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

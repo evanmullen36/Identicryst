@@ -1,0 +1,12 @@
+7/6/2021
+
+- added this text file for making notes
+- worked on the Detail View trying to align the margins
+
+Main.Storyboard and layout
+- Online tutorial help: https://www.raywenderlich.com/5758454-uiscrollview-tutorial-getting-started
+-
+- moved the scrollview to be within the safe area of the Viewcontroller and not the full outer boundaries of the view
+- set the image to have a constraint aspect ratio so the x-or-y size doesnt have to be hard coded but instead can scale with the picture
+- added outher boundaries that were either suggested or I added manually. 
+
