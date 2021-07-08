@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Crystals 💎-->
+        <!--Crystals -->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Identicryst" customModuleProvider="target" sceneMemberID="viewController">
@@ -82,7 +82,7 @@
                             <constraint firstItem="hIR-5V-SA0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uxa-he-144"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Crystals 💎" id="b6J-xM-XpG"/>
+                    <navigationItem key="navigationItem" title="Crystals " id="b6J-xM-XpG"/>
                     <connections>
                         <segue destination="8zp-R5-NxE" kind="show" id="cuv-3y-QmU"/>
                     </connections>
@@ -143,6 +143,15 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgU-oD-U6N">
+                                        <rect key="frame" x="8" y="651" width="398" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="hg9-Eg-Xd2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="WVW-zr-N03" firstAttribute="leading" secondItem="ayi-Dd-MOx" secondAttribute="leading" constant="8" id="2Df-jo-LL9"/>
@@ -155,11 +164,14 @@
                                     <constraint firstItem="Ebh-Ke-nm6" firstAttribute="leading" secondItem="ayi-Dd-MOx" secondAttribute="leading" constant="8" id="Qnp-aT-gmJ"/>
                                     <constraint firstItem="ayi-Dd-MOx" firstAttribute="trailing" secondItem="zdk-al-Umn" secondAttribute="trailing" constant="8" id="UqW-KJ-sHb"/>
                                     <constraint firstItem="Ebh-Ke-nm6" firstAttribute="top" secondItem="f4s-SB-doJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Xf3-zv-hTY"/>
+                                    <constraint firstItem="qgU-oD-U6N" firstAttribute="top" secondItem="zdk-al-Umn" secondAttribute="bottom" constant="8" symbolic="YES" id="Y6Z-EX-plQ"/>
                                     <constraint firstItem="zdk-al-Umn" firstAttribute="leading" secondItem="ayi-Dd-MOx" secondAttribute="leading" constant="8" id="Z1T-8e-FOh"/>
                                     <constraint firstItem="WVW-zr-N03" firstAttribute="top" secondItem="Ebh-Ke-nm6" secondAttribute="bottom" constant="8" symbolic="YES" id="faB-j0-iHw"/>
                                     <constraint firstItem="cno-HR-G2Y" firstAttribute="leading" secondItem="FHW-z7-pPD" secondAttribute="leading" id="lTW-Qa-D4E"/>
                                     <constraint firstItem="zdk-al-Umn" firstAttribute="top" secondItem="WVW-zr-N03" secondAttribute="bottom" constant="8" symbolic="YES" id="oYN-TN-qdB"/>
+                                    <constraint firstItem="ayi-Dd-MOx" firstAttribute="trailing" secondItem="qgU-oD-U6N" secondAttribute="trailing" constant="8" id="paw-Zd-LjU"/>
                                     <constraint firstItem="ayi-Dd-MOx" firstAttribute="trailing" secondItem="f4s-SB-doJ" secondAttribute="trailing" constant="8" id="rRV-rD-IpB"/>
+                                    <constraint firstItem="qgU-oD-U6N" firstAttribute="leading" secondItem="ayi-Dd-MOx" secondAttribute="leading" constant="8" id="vQ0-mB-rer"/>
                                     <constraint firstAttribute="trailing" secondItem="cno-HR-G2Y" secondAttribute="trailing" id="vle-5b-8QN"/>
                                     <constraint firstItem="cno-HR-G2Y" firstAttribute="top" secondItem="FHW-z7-pPD" secondAttribute="top" constant="10" id="wbC-k2-7Gc"/>
                                 </constraints>
@@ -179,6 +191,7 @@
                     <navigationItem key="navigationItem" id="Cx4-jj-ZWG"/>
                     <size key="freeformSize" width="414" height="1396"/>
                     <connections>
+                        <outlet property="associationsInfoLabel" destination="qgU-oD-U6N" id="JIU-9a-VIo"/>
                         <outlet property="backgroundInfoLabel" destination="f4s-SB-doJ" id="li2-SR-LC8"/>
                         <outlet property="crystalDescriptionTextView" destination="Ebh-Ke-nm6" id="Ihq-JN-BAU"/>
                         <outlet property="detailCrystalPhotoImageView" destination="cno-HR-G2Y" id="wne-iJ-EQL"/>
@@ -197,7 +210,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1E3-uE-4Qk" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="497-z0-0aa">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="104"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

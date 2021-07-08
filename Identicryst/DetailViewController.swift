@@ -25,6 +25,9 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var healingPropertiesInfoTextView: UITextView!
     @IBOutlet weak var scrollView: UIScrollView!
     
+    @IBOutlet weak var associationsInfoLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,7 +52,10 @@ class DetailViewController: UIViewController {
         healingPropertiesLabel.font = UIFont.systemFont(ofSize: 24, weight: .light)
         healingPropertiesInfoTextView.text = healingProp
         healingPropertiesInfoTextView.font = UIFont.systemFont(ofSize: 18, weight: .thin)
-        healingPropertiesInfoTextView.sizeToFit()
+        
+        // display associations
+        associationsInfoLabel.text = String("Associations ☸️")
+        associationsInfoLabel.font = UIFont.systemFont(ofSize: 24,weight: .light)
     
     }
 }
