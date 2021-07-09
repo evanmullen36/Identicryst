@@ -41,7 +41,7 @@ class DetailViewController: UIViewController {
         detailCrystalPhotoImageView.image = img
         
         // display background label and text
-        backgroundInfoLabel.text = String("About " + name + " ℹ️")
+        backgroundInfoLabel.text = String("About " + name)
         backgroundInfoLabel.font = UIFont.systemFont(ofSize: 24, weight: .light)
         
         // sets up crystal summary
@@ -50,13 +50,13 @@ class DetailViewController: UIViewController {
         
         
         // display healing properties label and text
-        healingPropertiesLabel.text = String("Healing Properties 💟")
+        healingPropertiesLabel.text = String("Healing Properties")
         healingPropertiesLabel.font = UIFont.systemFont(ofSize: 24, weight: .light)
         healingPropertiesInfoTextView.text = healingProp
         healingPropertiesInfoTextView.font = UIFont.systemFont(ofSize: 18, weight: .thin)
         
         // display associations label and text
-        associationsInfoLabel.text = String("Associations ☸️")
+        associationsInfoLabel.text = String("Associations")
         associationsInfoLabel.font = UIFont.systemFont(ofSize: 24,weight: .light)
         
         associationsTextView.text = associationsProp
