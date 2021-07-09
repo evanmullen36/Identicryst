@@ -14,7 +14,7 @@ class DetailViewController: UIViewController {
     var desc = ""
     var healingProp = ""
     var spiritualProp = ""
-    var emotionalProp = ""
+    var associationsProp = ""
     
     @IBOutlet weak var detailCrystalPhotoImageView: UIImageView!
    // about the crystal
@@ -26,13 +26,15 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     
     @IBOutlet weak var associationsInfoLabel: UILabel!
+    @IBOutlet weak var associationsTextView: UITextView!
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // sets up scroll view
-//       scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height+500)
+ //      scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height+200)
 
         // displays crystal title and crystal image
         title = name
@@ -53,9 +55,12 @@ class DetailViewController: UIViewController {
         healingPropertiesInfoTextView.text = healingProp
         healingPropertiesInfoTextView.font = UIFont.systemFont(ofSize: 18, weight: .thin)
         
-        // display associations
+        // display associations label and text
         associationsInfoLabel.text = String("Associations ☸️")
         associationsInfoLabel.font = UIFont.systemFont(ofSize: 24,weight: .light)
+        
+        associationsTextView.text = associationsProp
+        associationsTextView.font = UIFont.systemFont(ofSize: 18, weight: .thin)
     
     }
 }
